@@ -1,3 +1,12 @@
+## Execution
+Each 'plot' function is contained in its own file. And each plot function relies upon the 'loadData' function defined in that file.
+
+The 'loadData' function will download extract, load and clean data from the Internet, if the extracted data file is not available in the working directory on execution.
+
+The 'plot4' function relies upon 'plot2' and 'plot3'.
+
+Each plot function has a 'outputPNG' option (default FALSE). When set to TRUE, the rendering of the plot is performed to a PNG file with the name of the plot function (e.g. plot1 creates plot1.png). Additionally, data can be passed into the functions via the 'pwrData' parameter and it will not need to load (or download) the data.  This allows for loading the data once and then using it to call multiple plots (used in plot4).
+
 ## Introduction
 
 This assignment uses data from
